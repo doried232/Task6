@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0E7E83;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 30px;
+    border: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    height:86%;
+}
+
+.login-form .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #05be5d;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 125px;
+}
+
+.login-form p {
+    margin-top: 10px;
+}
+
+.login-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.image-container {
+    display: none; 
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .login-form,
+    .image-container {
+        flex: 1;
+    }
+
+    .image-container {
+        display: contents; 
+        padding: 20px;
+    }
+
+    .image-container img {
+        width: 50%;
+        height: 95%;
+    }
+    .input1{
+        text-align:left;
+    }
+    
+}
